@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: fraud
+  datasource:
+    password: stockmarket
+    url: jdbc:postgresql://localhost:5432/fraud
+    username: stockmarket
+    jpa:
+      hibernate:
+        ddl-auto: create-drop
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: true
